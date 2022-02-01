@@ -1,0 +1,21 @@
+{
+  "name": "automationtests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testContactUs": "npx cypress run --browser chrome --spec 'cypress/integration/Test Suite: Form verification Contact Us/*' --reporter cypress-mochawesome-reporter",
+    "testRequestOffer": "npx cypress run --browser chrome --spec 'cypress/integration/Test Suite: Form verification Request Offer/*' --reporter cypress-mochawesome-reporter",
+    "testAll": "npx cypress run --browser firefox --spec 'cypress/integration/**' --reporter cypress-mochawesome-reporter"
+  },
+  "keywords": [],
+  "author": "Michal Banas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.4.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mochawesome": "^7.0.1"
+  }
+}

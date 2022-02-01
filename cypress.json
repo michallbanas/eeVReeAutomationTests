@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://www.eevree.com/",
+    "retries": 1,
+    "video": false,
+    "reporter": "cypress-mochawesome-reporter",
+     "reporterOptions": {
+       "reportDir": "test-report",
+       "charts": true,
+       "reportPageTitle": "eeVree Test Report",
+       "embeddedScreenshots": true,
+       "inlineAssets": true,
+       "saveAllAttempts": false
+     }
+}
